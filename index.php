@@ -24,7 +24,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css?v=1">
+    <link rel="stylesheet" href="css/main.min.css?v=1">
     <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
 
     <!-- script
@@ -726,7 +726,7 @@
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js?v=1"></script>
 
 </body>
 
