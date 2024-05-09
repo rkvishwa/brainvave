@@ -24,7 +24,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.min.css?v=1">
+    <link rel="stylesheet" href="css/main.min.css?v=2">
     <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
 
     <!-- script

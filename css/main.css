@@ -1734,6 +1734,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
     .header-logo {
         left: 30px;
+        width:170px;
     }
     .header-menu-toggle {
         right: 25px;
