@@ -17,8 +17,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
             <div class="col-seven tab-full right footer-subscribe quick-links" style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: flex-end;">
                 <div style="flex: 1; min-width: 120px; text-align: left;">
-                    <h4>Quick Links</h4>
-                    <ul>
+                    <h4 style="text-align: left;">Quick Links</h4>
+                    <ul style="text-align: left; padding-left: 0; margin-left: 0; list-style: none;">
                         <li><a href="<?php echo $current_page == 'index.php' ? '#home' : 'index.php#home'; ?>">Home</a></li>
                         <li><a href="<?php echo $current_page == 'about.php' ? '#about' : 'about.php'; ?>">About</a></li>
                         <li><a href="projects.php">Projects</a></li>
@@ -27,9 +27,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <li><a href="<?php echo $current_page == 'index.php' ? '#clients' : 'index.php#clients'; ?>">Clients</a></li>
                     </ul>
                 </div>
-                <div style="flex: 1; min-width: 160px;">
-                    <h4 style="text-align: center;">Legal</h4>
-                    <ul style="white-space: nowrap; display: inline-block; text-align: left;">
+                <div style="flex: 1; min-width: 160px; text-align: left;">
+                    <h4 style="text-align: left;">Legal</h4>
+                    <ul style="white-space: nowrap; display: block; text-align: left; padding-left: 0; margin-left: 0; list-style: none;">
                         <li><a href="privacy-policy.php">Privacy Policy</a></li>
                         <li style="margin-top: 0.5rem;"><a href="terms-conditions.php">Terms & Conditions</a></li>
                         <li style="margin-top: 0.5rem; color: inherit; font-size: 1.4rem; font-weight: 400; padding-left: 0; text-align: left;">
@@ -40,9 +40,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         </li>
                     </ul>
                 </div>
-                <div style="flex: 1; min-width: 160px;">
-                    <h4 style="text-align: center;">Contact Us</h4>
-                    <div style="display: flex; justify-content: center; gap: 1.2rem; margin-top: 1.2rem; flex-wrap: wrap; align-items: center;">
+                <div style="flex: 1; min-width: 160px; text-align: left;">
+                    <h4 style="text-align: left;">Contact Us</h4>
+                    <div style="display: flex; justify-content: flex-start; gap: 1.2rem; margin-top: 1.2rem; flex-wrap: wrap; align-items: center;">
                         <a href="https://www.linkedin.com/company/brainvave-software-studios/" target="_blank" rel="noopener" title="LinkedIn" style="color: inherit; font-size: 2.6rem; display: flex; align-items: center;"><i class='bx bxl-linkedin-square'></i></a>
                         <a href="mailto:hello@brainvave.com" title="Mail" style="color: inherit; font-size: 2.6rem; display: flex; align-items: center;"><i class='bx bxl-gmail'></i></a>
                         <a href="https://wa.me/94741175199" target="_blank" rel="noopener" title="WhatsApp" style="color: inherit; font-size: 2.6rem; display: flex; align-items: center;"><i class='bx bxl-whatsapp'></i></a>

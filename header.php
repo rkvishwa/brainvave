@@ -27,7 +27,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.min.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=4">
     <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
 
     <!-- script
@@ -88,24 +88,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 </ul>
     
                 <p>Our vision is to pioneer innovative technology solutions that transform industries and enhance user experiences. We're driven by a commitment to excellence, collaboration, and continuous innovation, aiming to leave a lasting impact on the digital world.</p>
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://www.linkedin.com/company/brainvave-software-studios/"><i class='bx bxl-linkedin-square' ></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:hello@brainvave.com"><i class='bx bxl-gmail' ></i></a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/94741175199"><i class='bx bxl-whatsapp' ></i></i></a>
-                    </li>
-                    <li>
-                        <a href="tel:+94741175199"><i class='bx bx-phone' ></i></a>
-                    </li>
-                    <li>
-                        <a href="sms:+94741175199?&body=Hey%20I%20like%20to%20build%20a%20website."><i class='bx bx-message-rounded-dots'></i></a>
-                    </li>
-                </ul>
 
             </div> <!-- end header-nav__content -->
 
