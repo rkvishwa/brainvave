@@ -1,104 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Brainvave Software Studios</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- fonts
-    ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.min.css?v=3">
-    <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
-
-</head>
-
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="./">
-                <img src="images/logo.png" alt="Homepage">
-            </a>
-        </div>
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3>Navigation</h3>
-                
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#clients" title="clients">Clients</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                </ul>
-    
-                <p>Our vision is to pioneer innovative technology solutions that transform industries and enhance user experiences. We're driven by a commitment to excellence, collaboration, and continuous innovation, aiming to leave a lasting impact on the digital world.</p>
-    
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://www.linkedin.com/company/brainvave-software-studios/"><i class='bx bxl-linkedin-square' ></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:hello@brainvave.com"><i class='bx bxl-gmail' ></i></a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/94741175199"><i class='bx bxl-whatsapp' ></i></i></a>
-                    </li>
-                    <li>
-                        <a href="tel:+94741175199"><i class='bx bx-phone' ></i></a>
-                    </li>
-                    <li>
-                        <a href="sms:+94741175199?&body=Hey%20I%20like%20to%20build%20a%20website."><i class='bx bx-message-rounded-dots'></i></a>
-                    </li>
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav>  <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
+<?php include('header.php'); ?>
 
 
     <!-- home
@@ -124,7 +24,7 @@
                     <a href="#contact" class="smoothscroll btn btn--stroke">
                         Contact Now
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <a href="about.php" class="btn btn--stroke">
                         More About Us
                     </a>
                 </div>
@@ -132,7 +32,7 @@
             </div>
 
             <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
+                <a href="about.php" class="scroll-link">
                     <span>Scroll Down</span>
                 </a>
             </div>
@@ -164,49 +64,6 @@
     </section> <!-- end s-home -->
 
 
-    <!-- about
-    ================================================== -->
-    <section id='about' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Hello There</h3>
-                <h1 class="display-1 display-1--light">We Are Brainvave</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                Welcome to BrainVave Software Studios, your destination for exceptional website design and development. With a focus solely on crafting captivating and functional websites, we specialize in turning your online vision into reality. Our dedicated team of experts is committed to delivering top-notch web solutions tailored to your specific requirements. Let us transform your ideas into stunning, user-friendly websites that stand out in the digital landscape. 
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
-            <div class="col-block stats__col ">
-                <div class="stats__count_container"><span class="stats__count">150000</span> +</div>
-                <h5>Lines of Code</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count_container"><span class="stats__count">7000</span> +</div>
-                <h5>Hours of Development</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count_container"><span class="stats__count">20</span> +</div>
-                <h5>Projects Completed</h5> 
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count_container"><span class="stats__count">5</span> +</div>
-                <h5>Years of Experience</h5>
-            </div>
-
-        </div> <!-- end about-stats -->
-
-        <div class="about__line"></div>
-
-    </section> <!-- end s-about -->
 
 
     <!-- services
@@ -679,55 +536,4 @@
 
     <!-- footer
     ================================================== -->
-    <footer>
-
-        <div class="row footer-main">
-
-            <div class="col-ten tab-full left footer-desc">
-
-                <div class="footer-logo"></div>
-                Our vision is to pioneer innovative technology solutions that transform industries and enhance user experiences. We're driven by a commitment to excellence, collaboration, and continuous innovation, aiming to leave a lasting impact on the digital world.
-
-            </div>
-
-            <div class="col-two tab-full right footer-subscribe quick-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                </ul>
-            </div>
-
-        </div> <!-- end footer-main -->
-
-        <div class="row footer-bottom">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright Brainvave Digital Studios (Pvt) Ltd - <?= date("Y") ?></span> 	
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
-
-
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.min.js?v=1"></script>
-
-</body>
-
-</html>
+<?php include('footer.php'); ?>

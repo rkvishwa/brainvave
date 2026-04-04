@@ -1,0 +1,214 @@
+/* Team Section Design - Fixed Multi-Row Layout */
+.s-team {
+    background: #060a1a;
+    padding: 12rem 0;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ghost Text Background */
+.s-team::before {
+    content: "TEAM";
+    position: absolute;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 40rem;
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.03);
+    z-index: 1;
+    pointer-events: none;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+}
+
+.team-header, .team-container {
+    position: relative;
+    z-index: 2;
+}
+
+.team-header h3 {
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    color: #2baecc;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+.team-header .display-1 {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 8rem;
+    line-height: 1.1;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+    color: #ffffff;
+}
+
+.team-header .lead {
+    font-family: "lora-regular", serif;
+    font-size: 2.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+/* Team Grid Layout - mimicking the staggered overlapping look */
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Second Row Spacing */
+.team-row:nth-child(n+2) {
+    margin-top: 0; /* No vertical spacing between team rows */
+}
+
+.team-member {
+    position: relative;
+    flex: 0 0 250px;
+    height: 380px;
+    background-color: #000;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.team-member:hover {
+    z-index: 50;
+    transform: scale(1.05);
+}
+
+.team-member:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Corner Decorations - matching image exactly */
+.team-member .corner {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.team-member .corner-tl {
+    top: 0;
+    left: 0;
+    border-top: 3px solid #33adff;
+    border-left: 3px solid #33adff;
+}
+
+.team-member .corner-br {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #9c27b0;
+    border-right: 3px solid #9c27b0;
+}
+
+/* Staggering logic to match the image precisely */
+/* Odd members in a row go UP */
+.team-row .team-member:nth-child(odd) {
+    transform: translateY(-4rem);
+}
+
+/* Even members in a row go DOWN */
+.team-row .team-member:nth-child(even) {
+    transform: translateY(4rem);
+}
+
+/* Hover override for staggered items */
+.team-row .team-member:nth-child(odd):hover {
+    transform: translateY(-4rem) scale(1.05);
+}
+
+.team-row .team-member:nth-child(even):hover {
+    transform: translateY(4rem) scale(1.05);
+}
+
+/* Info styling */
+.member-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 1.5rem;
+    z-index: 15;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,1) 10%, transparent 100%);
+    opacity: 1;
+}
+
+.member-info h4 {
+    color: #ffffff;
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+}
+
+.member-info p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "lora-regular", serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.member-social a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.member-social a:hover {
+    color: #2baecc;
+}
+
+@media screen and (max-width: 1200px) {
+    .team-row {
+        flex-wrap: wrap;
+        margin-top: 0 !important;
+    }
+    .team-member {
+        margin: 1rem;
+        transform: none !important;
+    }
+    .s-team::before {
+        font-size: 20rem;
+    }
+}
