@@ -41,8 +41,6 @@
 
         </div> <!-- end about-stats -->
 
-        <div class="about__line"></div>
-
     </section> <!-- end s-about -->
 
     <!-- team

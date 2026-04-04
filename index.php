@@ -31,14 +31,6 @@
 
             </div>
 
-            <div class="home-content__scroll">
-                <a href="about.php" class="scroll-link">
-                    <span>Scroll Down</span>
-                </a>
-            </div>
-
-            <div class="home-content__line"></div>
-
         </div> <!-- end home-content -->
 
 
