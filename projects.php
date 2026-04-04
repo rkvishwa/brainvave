@@ -7,7 +7,7 @@
 	background: rgba(255, 255, 255, 0.02);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
-	border: 1px solid rgba(0, 255, 255, 0.15);
+	border: 1px solid rgba(37, 150, 190, 0.15);
 	border-radius: 1.5rem;
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 	overflow: hidden;
@@ -24,8 +24,8 @@
 }
 .glass-proj-card:hover {
 	transform: translateY(-8px);
-	box-shadow: 0 15px 40px rgba(0, 255, 255, 0.2);
-	border-color: rgba(0, 255, 255, 0.4);
+	box-shadow: 0 15px 40px rgba(37, 150, 190, 0.2);
+	border-color: rgba(37, 150, 190, 0.4);
 }
 .glass-proj-card-dashed {
 	border-style: dashed;
@@ -97,7 +97,7 @@
 }
 </style>
 
-<section class="s-projects section" style="padding-top: 15rem; padding-bottom: 12rem; background: linear-gradient(135deg, #030a11 0%, #000000 100%);">
+<section class="s-projects section" style="padding-top: 15rem; padding-bottom: 12rem; background: #02000d;">
 	<?php $global_card_index = 0; ?>
 	<!-- Our Clients Section -->
 	<div class="row section-header align-center" data-num="01">
@@ -144,7 +144,7 @@
 						<h2 class="project-title" style="font-family: 'Poppins', monospace; font-size:2em; margin-bottom:0.5em; color:#fff;">
 							<?= htmlspecialchars($project['name']) ?>
 							<?php if (!empty($project['url'])): ?>
-								<a href="<?= htmlspecialchars($project['url']) ?>" target="_blank" style="font-size:0.4em; color:#00ffff; border:1px solid #00ffff99; border-radius:0.5em; padding:0.1em 0.5em; margin-left:0.5em; background:rgba(0,255,255,0.07); vertical-align: middle; text-decoration:none; display: inline-block; transform: translateY(-5px);">Visit Site ↗</a>
+								<a href="<?= htmlspecialchars($project['url']) ?>" target="_blank" style="font-size:0.4em; color:#2596be; border:1px solid rgba(37, 150, 190,0.6); border-radius:0.5em; padding:0.1em 0.5em; margin-left:0.5em; background:rgba(37, 150, 190,0.07); vertical-align: middle; text-decoration:none; display: inline-block; transform: translateY(-5px);">Visit Site ↗</a>
 							<?php endif; ?>
 						</h2>
 						<p style="color:#aaa; margin-bottom:1.5em; flex-grow:1;">
@@ -152,7 +152,7 @@
 						</p>
 						<div class="project-tags">
 							<?php foreach ($project['tags'] as $tag): ?>
-								<span style="display:inline-block; border:1px solid rgba(0,255,255,0.3); border-radius:0.5em; padding:0.2em 0.8em; margin-right:0.5em; margin-bottom:0.5em; color:#00ffff; font-size:0.9em; font-family:monospace; background:rgba(0,255,255,0.05); backdrop-filter: blur(4px);">
+								<span style="display:inline-block; border:1px solid rgba(37, 150, 190,0.3); border-radius:0.5em; padding:0.2em 0.8em; margin-right:0.5em; margin-bottom:0.5em; color:#2596be; font-size:0.9em; font-family:monospace; background:rgba(37, 150, 190,0.05); backdrop-filter: blur(4px);">
 									<?= htmlspecialchars($tag) ?>
 								</span>
 							<?php endforeach; ?>
@@ -218,7 +218,7 @@
 						</p>
 						<div class="project-tags">
 							<?php foreach ($project['tags'] as $tag): ?>
-								<span style="display:inline-block; border:1px solid rgba(0,255,255,0.3); border-radius:0.5em; padding:0.2em 0.8em; margin-right:0.5em; margin-bottom:0.5em; color:#00ffff; font-size:0.9em; font-family:monospace; background:rgba(0,255,255,0.05); backdrop-filter: blur(4px);">
+								<span style="display:inline-block; border:1px solid rgba(37, 150, 190,0.3); border-radius:0.5em; padding:0.2em 0.8em; margin-right:0.5em; margin-bottom:0.5em; color:#2596be; font-size:0.9em; font-family:monospace; background:rgba(37, 150, 190,0.05); backdrop-filter: blur(4px);">
 									<?= htmlspecialchars($tag) ?>
 								</span>
 							<?php endforeach; ?>
@@ -271,7 +271,7 @@
 						<h2 class="project-title" style="font-family: 'Poppins', monospace; font-size:1.5em; margin-bottom:0.5em; color:#fff;">
 							<?= htmlspecialchars($project['name']) ?>
 							<?php if ($project['slug'] === 'project-titanic' || $project['slug'] === 'arduino-remote'): ?>
-								<span style="font-size:0.45em; color:#00ffff; border:1px solid rgba(0,255,255,0.4); border-radius:0.5em; padding:0.2em 0.6em; margin-left:0.5em; background:rgba(0,255,255,0.05); text-transform:uppercase; letter-spacing:1px; vertical-align: middle; display: inline-block; transform: translateY(-3px);">working title</span>
+								<span style="font-size:0.45em; color:#2596be; border:1px solid rgba(37, 150, 190,0.4); border-radius:0.5em; padding:0.2em 0.6em; margin-left:0.5em; background:rgba(37, 150, 190,0.05); text-transform:uppercase; letter-spacing:1px; vertical-align: middle; display: inline-block; transform: translateY(-3px);">working title</span>
 							<?php endif; ?>
 						</h2>
 						<p style="color:#aaa; margin-bottom:1.5em; font-size:0.95em; flex-grow:1;">
@@ -279,7 +279,7 @@
 						</p>
 						<div class="project-tags">
 							<?php foreach ($project['tags'] as $tag): ?>
-								<span style="display:inline-block; border:1px solid rgba(0,255,255,0.3); border-radius:0.5em; padding:0.2em 0.8em; margin-right:0.5em; margin-bottom:0.5em; color:#00ffff; font-size:0.9em; font-family:monospace; background:rgba(0,255,255,0.05); backdrop-filter: blur(4px);">
+								<span style="display:inline-block; border:1px solid rgba(37, 150, 190,0.3); border-radius:0.5em; padding:0.2em 0.8em; margin-right:0.5em; margin-bottom:0.5em; color:#2596be; font-size:0.9em; font-family:monospace; background:rgba(37, 150, 190,0.05); backdrop-filter: blur(4px);">
 									<?= htmlspecialchars($tag) ?>
 								</span>
 							<?php endforeach; ?>
