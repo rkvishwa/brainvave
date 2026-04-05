@@ -73,18 +73,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                     <li class="<?php echo $current_page == 'projects.php' ? 'current' : ''; ?>">
                         <a href="projects.php" title="projects">Projects</a>
                     </li>
-                    <li>
-                        <a class="<?php echo $current_page == 'index.php' ? 'smoothscroll' : ''; ?>" href="<?php echo $current_page == 'index.php' ? '#services' : 'index.php#services'; ?>" title="services">Services</a>
-                    </li>
-                    <li>
-                        <a class="<?php echo $current_page == 'index.php' ? 'smoothscroll' : ''; ?>" href="<?php echo $current_page == 'index.php' ? '#works' : 'index.php#works'; ?>" title="works">Works</a>
-                    </li>
-                    <li>
-                        <a class="<?php echo $current_page == 'index.php' ? 'smoothscroll' : ''; ?>" href="<?php echo $current_page == 'index.php' ? '#clients' : 'index.php#clients'; ?>" title="clients">Clients</a>
-                    </li>
-                    <li>
-                        <a class="<?php echo $current_page == 'index.php' ? 'smoothscroll' : ''; ?>" href="<?php echo $current_page == 'index.php' ? '#contact' : 'index.php#contact'; ?>" title="contact">Contact</a>
-                    </li>
+
                 </ul>
     
                 <p>Our vision is to pioneer innovative technology solutions that transform industries and enhance user experiences. We're driven by a commitment to excellence, collaboration, and continuous innovation, aiming to leave a lasting impact on the digital world.</p>
