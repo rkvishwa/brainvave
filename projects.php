@@ -202,7 +202,7 @@
     </div>
     <div class="row projects-list block-1-2 block-tab-full">
         <?php
-        $live_slugs = ['sonar-code-editor','nothing-dialer-1','diss-master','meta-scribe'];
+        $live_slugs = ['sonar-code-editor','nothing-dialer-1'];
         foreach ($featured_projects as $project):
             if (in_array($project['slug'], $live_slugs)):
         ?>
@@ -217,6 +217,9 @@
                     <div class="glass-content">
                         <h2 class="project-title">
                             <?= htmlspecialchars($project['name']) ?>
+                            <?php if (!empty($project['url'])): ?>
+                                <a href="<?= htmlspecialchars($project['url']) ?>" target="_blank" class="proj-link">Visit Site ↗</a>
+                            <?php endif; ?>
                         </h2>
                         <p class="proj-desc">
                             <?= htmlspecialchars($project['description']) ?>
@@ -255,8 +258,11 @@
                     <div class="glass-content">
                         <h2 class="project-title">
                             <?= htmlspecialchars($project['name']) ?>
-                            <?php if ($project['slug'] === 'project-titanic' || $project['slug'] === 'arduino-remote'): ?>
+                            <?php if ($project['slug'] === 'project-titanic'): ?>
                                 <span class="proj-badge">working title</span>
+                            <?php endif; ?>
+                            <?php if (!empty($project['url'])): ?>
+                                <a href="<?= htmlspecialchars($project['url']) ?>" target="_blank" class="proj-link">Visit Site ↗</a>
                             <?php endif; ?>
                         </h2>
                         <p class="proj-desc">

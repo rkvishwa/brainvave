@@ -8,6 +8,7 @@ $featured_projects = [
         'commit' => '78dc070',
         'description' => 'A secure, real-time collaborative coding environment designed specifically for supervised exams and technical interviews.',
         'tags' => ['Desktop App', 'Web'],
+        'url' => 'https://sonar.knurdz.org/',
     ],
     [
         'name' => 'Nothing Dialer 1',
@@ -16,6 +17,7 @@ $featured_projects = [
         'commit' => '1f125a2',
         'description' => 'A Dialer app for Nothing OS with custom glyph for outgoing and ongoing calls also.',
         'tags' => ['Mobile', 'IoT'],
+        'url' => 'https://github.com/rkvishwa/Nothing-Dialer-1',
     ],
     // ...existing code...
     // --- Partner Projects (Brainvave Software Studios) ---
