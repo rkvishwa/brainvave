@@ -17,22 +17,7 @@ $featured_projects = [
         'description' => 'A Dialer app for Nothing OS with custom glyph for outgoing and ongoing calls also.',
         'tags' => ['Mobile', 'IoT'],
     ],
-    [
-        'name' => 'Diss-Master',
-        'slug' => 'diss-master',
-        'branch' => 'main',
-        'commit' => 'da34852',
-        'description' => 'Diss-Master is a real-time multiplayer word game inspired by Codenames, the beloved board game designed by Vlaada Chvátil and published by Czech Games Edition.',
-        'tags' => ['Web', 'Game'],
-    ],
-    [
-        'name' => 'Meta Scribe',
-        'slug' => 'meta-scribe',
-        'branch' => 'main',
-        'commit' => 'fbb32e6',
-        'description' => 'A web-based SEO auditing tool that analyzes metadata, structured data, and on-page content quality to provide actionable optimization recommendations.',
-        'tags' => ['Web App', 'SEO', 'Developer Tool'],
-    ],
+    // ...existing code...
     // --- Partner Projects (Brainvave Software Studios) ---
     [
         'name' => 'Ayzack Global Education',
@@ -99,7 +84,7 @@ $upcoming_projects = [
         'tags' => ['PaaS', 'Infrastructure'],
     ],
     [
-        'name' => 'Arduino Remote',
+        'name' => 'Tantalum-IDE',
         'slug' => 'arduino-remote',
         'branch' => 'development/alpha',
         'commit' => '4b8e1c5',
